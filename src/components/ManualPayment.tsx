@@ -25,8 +25,11 @@ const ManualPayment = () => {
   };
 
   const handleManualPayment = async () => {
+    console.log('Manual payment started', formData);
+    
     // Validate form
-    if (!formData.customerName || !formData.customerEmail || !formData.amount) {
+    if (!formData.customerName.trim() || !formData.customerEmail.trim() || !formData.amount.trim()) {
+      console.log('Validation failed - missing required fields');
       toast({
         title: "Missing Information",
         description: "Please fill in all required fields",
@@ -37,9 +40,22 @@ const ManualPayment = () => {
 
     const amount = parseFloat(formData.amount);
     if (isNaN(amount) || amount <= 0) {
+      console.log('Validation failed - invalid amount:', formData.amount);
       toast({
         title: "Invalid Amount",
         description: "Please enter a valid amount",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.customerEmail.trim())) {
+      console.log('Validation failed - invalid email:', formData.customerEmail);
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address",
         variant: "destructive",
       });
       return;
