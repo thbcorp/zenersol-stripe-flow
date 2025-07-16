@@ -136,7 +136,7 @@ const PaymentPortal = () => {
               <Button
                 variant="outline"
                 className="h-auto p-4 text-left"
-                onClick={() => window.open('mailto:billing@thbpayments.com', '_blank')}
+                onClick={() => window.open('mailto:thehalalbros@hotmail.com', '_blank')}
               >
                 <div>
                   <div className="font-semibold">Contact Support</div>
