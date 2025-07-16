@@ -69,7 +69,7 @@ const PaymentPortal = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Zenersol Payment Portal</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">THB Payment Systems</h1>
           <p className="text-lg text-gray-600">Secure invoice payment system</p>
         </div>
 
@@ -136,7 +136,7 @@ const PaymentPortal = () => {
               <Button
                 variant="outline"
                 className="h-auto p-4 text-left"
-                onClick={() => window.open('mailto:billing@zenersol.com', '_blank')}
+                onClick={() => window.open('mailto:billing@thbpayments.com', '_blank')}
               >
                 <div>
                   <div className="font-semibold">Contact Support</div>
@@ -156,7 +156,7 @@ const PaymentPortal = () => {
 
         {/* Footer */}
         <div className="text-center mt-8 text-sm text-gray-600">
-          <p>© 2024 Zenersol. All rights reserved.</p>
+          <p>© 2025 THB Payment Systems. All rights reserved.</p>
           <p>Secure payments powered by Stripe</p>
         </div>
       </div>
