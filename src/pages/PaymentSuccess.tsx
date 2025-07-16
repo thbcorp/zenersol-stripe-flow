@@ -130,11 +130,11 @@ const PaymentSuccess = () => {
         </Card>
 
         <div className="text-center mt-8 text-sm text-gray-600">
-          <p>© 2024 Zenersol. All rights reserved.</p>
+          <p>© 2025 THB Payment Systems. All rights reserved.</p>
           <p>
             Need help? Contact us at{' '}
-            <a href="mailto:billing@zenersol.com" className="text-blue-600 hover:underline">
-              billing@zenersol.com
+            <a href="mailto:thehalalbros@hotmail.com" className="text-blue-600 hover:underline">
+              thehalalbros@hotmail.com
             </a>
           </p>
         </div>
